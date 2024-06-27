@@ -5,7 +5,7 @@ tasks:
     command: exit
   - name: Run React App
     init: gp sync-await frontend
-    command: npm run
+    command: npm start
   - name: Run Mock API
     init: gp sync-await frontend
     command: json-server --watch db.json --port 5001
