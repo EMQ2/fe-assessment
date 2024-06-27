@@ -1,0 +1,10 @@
+{
+    "form-schema": {
+      "fields": [
+        { "type": "text", "label": "Name", "name": "name", "required": true },
+        { "type": "number", "label": "Age", "name": "age", "required": true },
+        { "type": "checkbox", "label": "Subscribe to Newsletter", "name": "subscribe" }
+      ]
+    }
+  }
+  
