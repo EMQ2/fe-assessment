@@ -1,7 +1,7 @@
 
 tasks:
   - name: Install dependencies
-    init: cd dynamic-form-app && npm i
+    init: npm i
     command: |
       json-server --watch db.json --port 5001
       npm start
