@@ -2,6 +2,8 @@
 
 ## Objective
 
+![image](/docs/img/demo.gif)
+
 Create a React application with the following features:
 1. **Custom Hook for Fetching Data:** Create a custom hook `useFetch` to fetch the JSON schema and form data.
 2. **Dynamic Form Rendering:** Implement a form that dynamically renders fields based on a JSON schema fetched from an API.
