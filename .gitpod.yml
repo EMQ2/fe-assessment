@@ -1,0 +1,17 @@
+
+tasks:
+  - name: Install dependencies
+    init: cd dynamic-form-app; npm install
+    command: |
+      json-server --watch db.json --port 5001
+      npm start
+
+ports:
+  - name: React App
+    port: 3000
+    visibility: public
+    onOpen: ignore
+  - name: Mock API
+    port: 5001
+    visibility: public
+    onOpen: ignore
