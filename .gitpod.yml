@@ -1,10 +1,14 @@
 
 tasks:
   - name: Install dependencies
-    init: npm i
-    command: |
-      json-server --watch db.json --port 5001
-      npm start
+    init: npm i && npm install -g json-server -y && gp sync-done frontend
+    command: exit
+  - name: Run React App
+    init: gp sync-await frontend
+    command: npm run
+  - name: Run Mock API
+    init: gp sync-await frontend
+    command: json-server --watch db.json --port 5001
 
 ports:
   - name: React App
